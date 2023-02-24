@@ -1,0 +1,70 @@
+<!--  /* 
+File name: navbar.ejs
+Student’s Name: Mahfuzur Rahman
+StudentID : 301336576
+Date : Feb 7 2023 
+*/
+  -->
+ <!--Top Nav Bar Partial-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="font-size:20px;background-color: rgb(0, 0, 0)!important">
+    <div class="container-fluid" style="background-color:rgb(0, 0, 0)">
+          
+      <img src="/Assests/images/main.png" height="120px" width="150px"> 
+      <img src="/Assests/images/animation.GIF" height="170px" width="350px"> 
+      
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+           
+        <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="/home" style="color: rgb(53, 136, 222)" >   <i class="fas fa-home"></i>     Home</a>
+        </li>
+         
+           <li class="nav-item">
+          <a class="nav-link " href="/about"  style="color: rgb(53, 136, 222)" >  <i class="fas fa-lg fa-info-circle">  </i>  About</a>
+          </li>
+
+          <li class="nav-item" >
+            <a class="nav-link "  href="/projects"  style="color: rgb(53, 136, 222)" >  <i class="fas fa-trophy"></i>  Projects</a>
+            
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"  href="/services" style="color: rgb(53, 136, 222)" > <i class="fas fa-toolbox"></i>   Services</a>            
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"  href="/contact" style="color: rgb(53, 136, 222)" >  <i class="fas fa-mobile-alt"></i>   Contact</a>            
+          </li>
+           
+          <!-- new section start   -->            
+
+           <% if (displayName) { %>
+            <li class="nav-item">
+             <a class="nav-link"  href="/contacts-list"   style="color: rgb(53, 136, 222)" > <i class="fas fa-lg fa-book"> </i> Contact List</a>
+           </li>
+           <% } else { %>
+              <li class="nav-item">
+             <a class="nav-link"  href="/login"  style="color: rgb(53, 136, 222)"  > <i class="fas fa-lg fa-book"></i> Contact List</a>
+           </li>
+           <% } %>
+ 
+           <% if (displayName) { %>
+              <li class="nav-item">
+             <a class="nav-link"  href="/logout" style="color: rgb(53, 136, 222)" > <i class="fas fa-lg fa-sign-out-alt"></i>Logout</a>
+           </li>
+          <% } else { %>
+           <li class="nav-item">
+             <a class="nav-link"  href="/login"  style="color: rgb(53, 136, 222)" > <i class="fas fa-lg fa-sign-in-alt"></i> Login</a>
+           </li>
+          <% } %>
+
+          <!-- new section end -->
+
+      </div>
+    </div>
+  </nav>

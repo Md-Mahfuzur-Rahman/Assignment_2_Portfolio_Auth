@@ -1,0 +1,63 @@
+<!--  /* 
+File name: index.ejs
+Student’s Name: Mahfuzur Rahman
+StudentID : 301336576
+Date : Feb 7 2023 
+*/
+  -->
+
+<!--Header Partial Included -->
+<% include partials/header.ejs %>
+
+  <!--Top Navbar Partial Included -->
+  <% include partials/navbar.ejs %>
+
+    <body style="background-color:rgb(235, 235, 235);">
+    </body>
+
+    <div class="container">
+      <div class="row">
+        <!-- <h1 class="headerText">Welcome to the <%= title %> page</h1> -->
+        <h1 class="headerText">Welcome to Mahfuzur Rahman's portfolio page</h1>
+      </div>
+      <hr>
+      </br>
+      <div class="row">
+        <div class="col-6">
+          <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+            <h4>Hi, I am Mahfuzur Rahman </h4>
+            <p style="font-size: larger;">
+              Software engineer skilled at C++, Objective-C and Swift.
+              Have been learning Java, Python and JavaScript and I love to explore new domain and technologies.
+              This is my portfolio website made using expressJS and NodeJS.
+            </p>
+          </div>
+
+          <br><br><br>
+
+          <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+
+            <div class="card" style=" background-color:rgb(235, 235, 235);">
+              <div class="card-body">
+
+                <h5 class="card-title headerText"> Mission</h5>
+                <p class="card-text" style="font-size: large;">
+                  Now I am studying AI-Software Engineering at Centennial College.
+                  Expecting to be a skilled data scientist in Canada.
+                </p>
+                <button type="button" class="btn btn-primary" onclick="window.open('/about')"> Learn more about me
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <img  src="/Assests/images/_initial.png" height="300px">
+        </div>
+      </div>
+      <br><br><br>
+    </div>
+    <!--Bottom Navbar Partial Included -->
+    <% include partials/bottomnavbar.ejs %>
+      <!--Footer Partial Included -->
+      <% include partials/footer.ejs %>

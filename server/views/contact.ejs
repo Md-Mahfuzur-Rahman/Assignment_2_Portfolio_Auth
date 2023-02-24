@@ -1,0 +1,73 @@
+<!--  /* 
+File name: contact.ejs
+Student’s Name: Mahfuzur Rahman
+StudentID : 301336576
+Date : Feb 7 2023 
+*/
+  -->
+<!--Header Partial Included -->
+<% include partials/header.ejs %>
+  <!--Top Navbar Partial Included -->
+  <% include partials/navbar.ejs %>
+
+    <body style="background-color:rgb(235, 235, 235);">
+    </body>
+    <div class="container">
+      <div>
+        <h1 class="headerText">Contact Me</h1>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col">
+          <form>
+            <div class="mb-3">
+              <label for="firstname" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstname">
+            </div>
+            <div class="mb-3">
+              <label for="lastname" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastname">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="contact" class="form-label">Contact Number</label>
+              <input type="text" class="form-control" id="contact">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-info" style="background-color:rgb(53, 136, 222)"
+              onclick="window.open('/home')"> Submit </button>
+          </form>
+        </div>
+        <div class="col">
+          <h4 class="headerText">Connect with me </h4>
+          <hr>
+          <h4 class="headerText"> Mahfuzur Rahman </h4>
+          <h5 class="headerText"> Email : mrahm348@my.centennialcollege.ca </h5>
+          <h5 class="headerText">Scarborough, Toronto</h5>
+          <br>
+          <h5 class="headerText">Social Links</h5>
+          <br>
+          <p class="headerText">
+            <a href="https://www.linkedin.com/in/mahfuzur-rahman-168a951b/" target="blank"><i
+                class="fab fa-3x fa-linkedin"></i></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/Md-Mahfuzur-Rahman" target="blank"><i class="fab fa-3x fa-github"></i></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://mrahm348@my.centennialcollege.ca" target="blank"><i class="far fa-3x fa-envelope"></i> </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <!--Bottom Navbar Partial Included -->
+    <% include partials/bottomnavbar.ejs %>
+
+      <!--Footer Partial Included -->
+      <% include partials/footer.ejs %>

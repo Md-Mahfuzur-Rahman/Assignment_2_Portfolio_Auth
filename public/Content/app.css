@@ -1,0 +1,23 @@
+/* 
+File name: app.css
+Student’s Name: Mahfuzur Rahman
+StudentID : 301336576
+Date : Feb 7 2023 
+*/
+
+
+.center {
+    text-align: center;
+  }
+  .container{
+	margin-top: 25px;
+    
+}
+
+.headerText{
+    text-align: center;
+}
+
+.nav-link{
+  color:blue;
+}

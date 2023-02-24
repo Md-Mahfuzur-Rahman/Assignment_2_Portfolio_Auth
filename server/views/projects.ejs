@@ -1,0 +1,127 @@
+<!--  /* 
+File name: projects.ejs
+Student’s Name: Mahfuzur Rahman
+StudentID : 301336576
+Date : Feb 7 2023 
+*/
+  -->
+  <!--Header Partial Included -->
+  <% include partials/header.ejs %>
+
+  <!--Top Navbar Partial Included -->
+  <% include partials/navbar.ejs %>
+
+    <body style="background-color:rgb(235, 235, 235);">
+    </body>
+    <style>
+      img {
+        border-radius: 20%;
+      }
+    </style>
+    <div class="container">
+      <div>
+        <h1 class="headerText">Projects</h1>
+      </div>
+      <br>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+        <div class="col"> <!-- color pop  -->
+          <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+            <div class="card h-100">
+              <img src="/Assests/images/colorpop.png">
+              <br>
+              <div class="card-body">
+                <h5> Color Pop Effects Photo Editor </h5>
+                <h7>
+                  <a href="https://apps.apple.com/us/app/color-pop-effects-photo-editor/id940508574" target="_blank">
+                    View in App Store </a>
+                </h7>
+                <p style="font-family:'Courier New' "> Rating: 4.6 • 76.5K </p>
+                <p>
+                  Though this application was very popular,
+                  clients always wanted to make attractive photos by adding “Filter”.
+                  After a long time of research I introduced the photo “Filter” in this
+                  application and made it widely acceptable among clients.
+                </p>
+                <br>
+                <p> <b> Environment: XCode, Objective-C, Swift, Firebase, GPUImage Framework, Firebase Crashlytics </b>
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"> Project of Kite Games Studio </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col"> <!-- add music   -->
+          <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+            <div class="card h-100">
+
+              <img src="/Assests/images/addmusic.png">
+
+              <div class="card-body">
+
+                <h5> Add Music To Video Editor </h5>
+                <h7>
+                  <a href="https://apps.apple.com/us/app/add-music-to-video-editor/id947792997" target="_blank"> View in
+                    App Store </a>
+                </h7>
+                <p style="font-family:'Courier New' "> Rating: 4.6 • 49K </p>
+                <p>
+                  Before my joining, it was developed by other developers.
+                  However, in order to boost its performance, I adopted VideoComposition of Video Editor in this
+                  project,
+                  as a result it gained the capability of processing each frame during playing and saving video.
+                  VideoComposition also facilitated 4K video support.
+                  In the latest version I took the initiative to add 4K video support and succeeded.
+                </p>
+                <br>
+                <p> <b>Environment: XCode, Objective-C, Swift, OpenGL, GPUImage Framework, Firebase Crashlytics </b></p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"> Project of Kite Games Studio </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col"> <!-- slide show maker   -->
+          <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+            <div class="card h-100">
+
+              <img src="/Assests/images/slid.png" class="card-img-top" width="150px" alt="Online Booking">
+              <div class="card-body">
+
+                <h5> Slideshow Maker w Music </h5>
+                <h7>
+                  <a href="https://apps.apple.com/us/app/slideshow-maker-w-music/id1119493669" target="_blank"> View in
+                    App Store </a>
+                </h7>
+                <p style="font-family:'Courier New' "> Rating: 4.5 • 37K </p>
+                <p>
+                  Demo project or prototype project with basic features/requirements had been developed by me.
+                  I utilized the Video Editor projects Data Models and VideoComposition in this project.
+                  In order to provide different kinds of effects or themes I carried out R&D on “CABasicAnimation”.
+                </p>
+                <br>
+                <p> <b> Environment: XCode, Objective-C, Swift, OpenGL, Firebase Crashlytics </b></p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"> Project of Kite Games Studio </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+    <!--Bottom Navbar Partial Included -->
+    <% include partials/bottomnavbar.ejs %>
+
+      <!--Footer Partial Included -->
+      <% include partials/footer.ejs %>
