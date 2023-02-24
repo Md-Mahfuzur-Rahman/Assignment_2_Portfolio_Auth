@@ -10,7 +10,6 @@ Date : Feb 7 2023
 let createError = require('http-errors');
 
 
-
 // What Is Express JS?     
 // Express is a node js Web Application Framework that provides broad features for building web and 
 // mobile applications.  It's a layer built on the top of the Node js that helps manage servers and routes.
@@ -35,8 +34,10 @@ let session = require('express-session');
 
 let passport = require('passport');
 let passportLocal = require('passport-local');
-let localStrategy = passportLocal.Strategy;
+// let localStrategy = passportLocal.Strategy;
+
 let flash = require('connect-flash');
+
 //--
 //database setup
 let mongoose = require("mongoose");
