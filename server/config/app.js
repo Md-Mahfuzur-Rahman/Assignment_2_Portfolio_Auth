@@ -34,7 +34,7 @@ let session = require('express-session');
 
 let passport = require('passport');
 let passportLocal = require('passport-local');
-// let localStrategy = passportLocal.Strategy;
+let localStrategy = passportLocal.Strategy;
 
 let flash = require('connect-flash');
 
@@ -45,6 +45,7 @@ let DB = require("./db");
 //--
 //point mongoose to DB URI
 mongoose.connect(DB.URI,{useNewUrlParser: true, useUnifiedTopology: true });
+
 let mongoDB = mongoose.connection;
 mongoDB.on('error',console.error.bind(console,'Connection Error:'));
 mongoDB.once('open',()=>{

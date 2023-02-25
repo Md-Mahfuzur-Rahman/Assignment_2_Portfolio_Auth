@@ -11,7 +11,6 @@ let mongoose = require('mongoose');
 let passport = require('passport');
 
 
-mongoose.set('strictQuery', false);
 
 //create the User Model Instance
 let userModel = require('../models/user');
