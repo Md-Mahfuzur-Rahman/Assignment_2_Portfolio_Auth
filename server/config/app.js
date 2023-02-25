@@ -41,7 +41,10 @@ let flash = require('connect-flash');
 //--
 //database setup
 let mongoose = require("mongoose");
+mongoose.set('strictQuery', true);
+
 let DB = require("./db");
+
 //--
 //point mongoose to DB URI
 mongoose.connect(DB.URI,{useNewUrlParser: true, useUnifiedTopology: true });
