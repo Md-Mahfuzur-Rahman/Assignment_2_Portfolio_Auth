@@ -5,11 +5,9 @@ StudentID : 301336576
 Date : Feb 24 2023 
 */
 
-let express =  require('express');
-let router = express.Router();
-let mongoose = require('mongoose');
+// require() is a built-in function to include external modules that exist in separate files. 
+// require() statement basically reads a JavaScript file
 let passport = require('passport');
-
 
 
 //create the User Model Instance
@@ -46,12 +44,12 @@ module.exports.displayLoginPage = (req, res, next) =>{
     //check if  the user is already logged in
     if(!req.user)
     {
-    res.render('auth/login',
-    {
-        title: "Login",
-        messages: req.flash('loginMessage'),
-        displayName: req.user ? req.user.displayName: ''
-    })
+        res.render('auth/login',
+        {
+            title: "Login",
+            messages: req.flash('loginMessage'),
+            displayName: req.user ? req.user.displayName: ''
+        })
     }
     else{
         return res.redirect('/');

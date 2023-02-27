@@ -5,9 +5,9 @@ StudentID : 301336576
 Date : Feb 24 2023 
 */
 
-let express = require('express');
-let router = express.Router();
-let mongoose = require('mongoose');
+// let express = require('express');        not used
+// let router = express.Router();           not used
+// let mongoose = require('mongoose');      not used
 
 //Create a reference to the model
 

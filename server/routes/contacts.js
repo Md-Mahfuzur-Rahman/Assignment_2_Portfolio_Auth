@@ -8,12 +8,11 @@ Date : Feb 24 2023
 let express = require('express');
 let router = express.Router();
 
-let mongoose = require('mongoose');
-
+// let mongoose = require('mongoose');
 // let passport = require('passport');
-
 // //Connect to contact model
 // let Contacts = require('../models/contacts');
+
 
 let contactsController = require('../controllers/contacts');
 
